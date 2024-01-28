@@ -1,6 +1,6 @@
-import SideNav from "../dashboard/Components/SideNav"
-import TopNav from "../dashboard/Components/TopNav"
-import Main from "./Components/Main"
+import SideNav from "../dashboard/components/SideNav"
+import TopNav from "../dashboard/components/TopNav"
+import Main from "./components/Main"
 
 const pageTitle = "Videos"
 

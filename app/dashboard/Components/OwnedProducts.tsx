@@ -1,4 +1,4 @@
-import ProductMeter from "./ProgressMeter"
+import ProductMeter from "./ProgressMeter";
 
 const OwnedProducts = () => {
     return (

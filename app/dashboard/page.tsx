@@ -1,12 +1,12 @@
 //Dashboard page
 "use client"
 import Link from "next/link";
-import Wishlist from "./Components/Wishlist";
-import TopNav from "./Components/TopNav";
-import Greeting from "./Components/Greeting";
-import ProductMeter from "./Components/ProgressMeter";
-import SideNav from "./Components/SideNav";
-import Quicklinks from "./Components/Quicklinks";
+import Wishlist from "./components/Wishlist";
+import TopNav from "./components/TopNav";
+import Greeting from "./components/Greeting";
+import ProductMeter from "./components/ProgressMeter";
+import SideNav from "./components/SideNav";
+import Quicklinks from "./components/Quicklinks";
 
 const pageVitals = {
     productsOwned: 6,

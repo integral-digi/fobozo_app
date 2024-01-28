@@ -1,7 +1,7 @@
-import OurProductFade from "./Components/OurProductFade";
-import OurProducts from "./Components/OurProducts";
-import SideNav from "../dashboard/Components/SideNav";
-import TopNav from "../dashboard/Components/TopNav";
+import OurProductFade from "./components/OurProductFade";
+import OurProducts from "./components/OurProducts";
+import SideNav from "../dashboard/components/SideNav";
+import TopNav from "../dashboard/components/TopNav";
 
 const pageTitle = "Our Products";
 

@@ -1,6 +1,6 @@
-import Footer from "./Components/Footer";
-import Hero from "./Components/Hero";
-import Nav from "./Components/Nav";
+import Footer from "./components/Footer";
+import Hero from "./components/Hero";
+import Nav from "./components/Nav";
 
 const Home = () => {
   return (

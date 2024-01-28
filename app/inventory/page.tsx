@@ -1,6 +1,6 @@
-import SideNav from "@/app/dashboard/Components/SideNav"
-import TopNav from "@/app/dashboard/Components/TopNav"
-import InvSingle from "./Components/InvSingle"
+import SideNav from "@/app/dashboard/components/SideNav"
+import TopNav from "@/app/dashboard/components/TopNav"
+import InvSingle from "./components/InvSingle"
 
 const pageTitle = "Inventory"
 
