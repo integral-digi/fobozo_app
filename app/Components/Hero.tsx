@@ -73,7 +73,7 @@ const Hero = () => {
                 </section>
                 <section className="flex items-center space-x-8 justify-center">
                     <button className="flex items-center justify-around border border-orange-100 rounded-3xl h-12 w-32 hover:bg-white hover:text-white" onClick={() => router.push(buttonOne.href)}>
-                        <p className="text-orange-100 font-primary hover:text-white">{buttonOne.name}</p>
+                        <p className="text-orange-100 font-primary hover:text-gray-900">{buttonOne.name}</p>
                     </button>
                     <button className="flex items-center" onClick={() => router.push(buttonTwo.href)}>
                         <p className="text-white font-primary">{buttonTwo.name}</p>
