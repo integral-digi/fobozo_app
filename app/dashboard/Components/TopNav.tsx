@@ -55,7 +55,7 @@ const TopNav: React.FC<TopNavProps> = ({ currentTitle }) => {
   return (
     <section className="flex items-center w-full h-12 relative justify-between">
       <section className="flex items-center space-x-5">
-        <h2 className="text-white text-3xl lg:text-3xl">
+        <h2 className="text-white text-3xl lg:text-3xl font-black">
           {currentTitle}
         </h2>
       </section>
