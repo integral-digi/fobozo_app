@@ -1,4 +1,5 @@
 "use client"
+
 // Importing the necessary modules
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
@@ -42,8 +43,8 @@ const bounceSoftStyle = {
         duration: 0.5,
         ease: "easeInOut",
         type: "spring",
-        damping: 10, // Adjust the damping for the bounce effect
-        stiffness: 50, // Adjust the stiffness for the bounce effect
+        damping: 100, // Adjust the damping for the bounce effect
+        stiffness: 100, // Adjust the stiffness for the bounce effect
       },
     },
   };
@@ -86,7 +87,7 @@ const Hero = () => {
                 animate="animate"
             >
                 <Image
-                    src={heroImg.src}
+                    src="/assets/gta.svg"
                     alt={heroImg.name}
                     height={640}
                     width={1360}
