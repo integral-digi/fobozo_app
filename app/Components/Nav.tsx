@@ -29,7 +29,7 @@ const buttonInfo: ButtonInfo  = {
 
 const Nav: React.FC = () => {
     return (
-        <nav className="w-full flex items-center justify-between pt-12 lg:hidden">
+        <nav className="w-full flex items-center justify-between lg:hidden">
             <section className="w-full flex items-center space-x-20">
                 <section>
                     <Image

@@ -13,11 +13,11 @@ const Footer = () => {
     return (
         <footer className="space-y-8">
             <hr className="w-full h-px bg-gray-700" />
-            <section className="flex items-center justify-between lg:block space-y-8">
-                <p className="text-white text-base font-primary leading-normal">
+            <section className="flex items-center justify-between lg:block space-y-8 lg:mx-auto">
+                <p className="text-white text-base font-primary leading-normal lg:text-center">
                     {footerItems.copyright}
                 </p>
-                <section className="flex items-center space-x-4">
+                <section className="flex items-center space-x-4 lg:mx-auto lg:justify-center">
                     {footerItems.socialIcons.map((item) => (
                         <Link href={item.href} target="blank" key={item.id}>
                             <Image 
