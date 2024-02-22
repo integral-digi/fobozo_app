@@ -5,13 +5,13 @@ import Nav from "./components/Nav";
 
 const Home = () => {
   return (
-    <main className="px-16 bg-gray-900 space-y-48 lg:px-8 lg:py-12 lg:w-full">
-      <section className="hidden lg:block">
-        <MobileNav />
+    <main className="px-16 bg-gray-900 lg:px-8 lg:py-12 lg:w-full">
+      <MobileNav />
+      <section className="space-y-48">
+        <Nav />
+        <Hero />
+        <Footer />
       </section>
-      <Nav />
-      <Hero />
-      <Footer />
     </main>
   )
 }

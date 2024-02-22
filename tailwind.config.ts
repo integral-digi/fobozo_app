@@ -30,8 +30,9 @@ const config: Config = {
 
       'sm': {'max': '414px'},
       // => @media (max-width: 639px) { ... }
-    }
+    },
   },
   plugins: [],
-};
+}
+
 export default config;

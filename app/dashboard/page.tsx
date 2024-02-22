@@ -22,7 +22,7 @@ const DashPage = () => {
             <section className="pl-72">
                 <Greeting /> 
             </section>     
-            <section className="flex items-start justify-between pb-24">
+            <section className="flex items-start justify-between pb-24 lg:block">
                 <section className="w-24">
                     <SideNav />
                 </section>

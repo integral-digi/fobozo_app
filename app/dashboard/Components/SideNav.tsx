@@ -49,7 +49,7 @@ const SideNav = () => {
   };
 
   return (
-    <nav className="w-24 h-screen bg-gray-800 fixed left-0 top-0">
+    <nav className="w-24 h-screen bg-gray-800 fixed left-0 top-0 lg:hidden">
       <section className='relative mx-auto px-8 py-12 justify-center items-center space-y-16'>
         <section className='cursor-pointer'>
           <Image 

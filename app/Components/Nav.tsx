@@ -15,7 +15,7 @@ interface ButtonInfo {
 }
 
 //this array houses the main navigation links
-const navChildren: NavChild[]  = [
+export const navChildren: NavChild[]  = [
     { id: 1, name: "Documentation", href: "/docs" },
     { id: 2, name: "Products", href: "/products" },
     { id: 3, name: "Inventory", href: "/inventory" },
@@ -29,7 +29,7 @@ const buttonInfo: ButtonInfo  = {
 
 const Nav: React.FC = () => {
     return (
-        <nav className="w-full flex items-center justify-between lg:hidden">
+        <nav className="w-full flex items-center justify-between pt-12 lg:hidden">
             <section className="w-full flex items-center space-x-20">
                 <section>
                     <Image

@@ -17,7 +17,8 @@ const Main = () => {
                 <Image
                     src={pageItems.image} 
                     alt={pageItems.text} 
-                    width={224}
+                    width={360}
+                    height={540}
                     className="h-auto" 
                 />
                 <p className="text-center text-white text-xl font-secondary tracking-tight">
