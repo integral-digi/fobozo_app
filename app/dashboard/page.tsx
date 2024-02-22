@@ -15,15 +15,15 @@ const pageVitals = {
 
 const DashPage = () => {
     return (
-        <section className="w-full bg-gray-900 lg:w-full relative space-y-32">
-            <section className="top-0 px-32 pt-6">
+        <section className="w-full bg-gray-900 relative space-y-32 lg:w-full">
+            <section className="top-0 px-32 pt-6 lg:px-8">
                 <TopNav currentTitle="" />
             </section>   
             <section className="pl-72">
                 <Greeting /> 
             </section>     
             <section className="flex items-start justify-between pb-24 lg:block">
-                <section className="w-24">
+                <section className="w-24 lg:hidden">
                     <SideNav />
                 </section>
                 <section className="px-32 space-y-32 w-1/2">   
