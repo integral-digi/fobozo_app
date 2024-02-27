@@ -8,15 +8,15 @@ const inventoryItems = [
 
 const InvSingle = () => {
     return (
-        <section className="flex flex-1 flex-wrap space-x-8 space-y-8 items-baseline">
+        <section className="flex flex-1 flex-wrap space-x-8 space-y-8 items-baseline lg:block">
             {inventoryItems.map((item) => (
-                <section key={item.id} className="rounded-2xl overflow-hidden border-2 border-gray-300 h-fit">
+                <section key={item.id} className="rounded-2xl overflow-hidden border-2 border-gray-300 h-fit max-w-full">
                     <Image 
                         src={item.image} 
                         height={200} 
                         width={400} 
                         alt={`Image of ${item.name}`} 
-                        className="h-[200px]"
+                        className="h-[200px] lg:max-w-full lg:max-h-max"
                     />
                     <section className="p-4 bg-purple-600 flex items-center justify-between">
                         <p className="font-secondary text-base text-white">

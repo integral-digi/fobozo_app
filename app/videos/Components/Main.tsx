@@ -12,14 +12,14 @@ const Main = () => {
     const router = useRouter();
 
     return (
-        <section className="flex justify-center">
-            <section className="mx-auto space-y-8">
+        <section className="flex justify-center lg:block">
+            <section className="mx-auto space-y-8 lg:max-w-full">
                 <Image
                     src={pageItems.image} 
                     alt={pageItems.text} 
                     width={360}
                     height={540}
-                    className="h-auto" 
+                    className="h-auto max-w-fit" 
                 />
                 <p className="text-center text-white text-xl font-secondary tracking-tight">
                     {pageItems.text}

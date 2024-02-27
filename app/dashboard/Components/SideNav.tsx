@@ -4,37 +4,38 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 interface NavbarLinkProps {
+  id: string; // unique identifier
   icon: string;
   label: string;
   href: string;
 }
 
-const navData: NavbarLinkProps[] = [
-  { icon: "/assets/home.svg", label: 'Home', href: "/dashboard" },
-  { icon: "/assets/doc.svg", label: 'Documentation', href: "/documentation" },
-  { icon: "/assets/inventory.svg", label: 'Inventory', href: "/inventory" },
-  { icon: "/assets/videos.svg", label: 'Videos', href: "/videos" },
-  { icon: "/assets/products.svg", label: 'Products', href: "/products" },
-  { icon: "/assets/help.svg", label: 'Help', href: "/help" },
+export const navData: NavbarLinkProps[] = [
+  { id: 'home', icon: "/assets/home.svg", label: 'Home', href: "/dashboard" },
+  { id: 'documentation', icon: "/assets/doc.svg", label: 'Documentation', href: "/documentation" },
+  { id: 'inventory', icon: "/assets/inventory.svg", label: 'Inventory', href: "/inventory" },
+  { id: 'videos', icon: "/assets/videos.svg", label: 'Videos', href: "/videos" },
+  { id: 'products', icon: "/assets/products.svg", label: 'Products', href: "/products" },
+  { id: 'help', icon: "/assets/help.svg", label: 'Help', href: "/help" },
 ];
 
 const navDataTwo: NavbarLinkProps[] = [
-  { icon: "/assets/settings.svg", label: 'Settings', href: "/settings" },
+  { id: 'settings', icon: "/assets/settings.svg", label: 'Settings', href: "/settings" },
 ];
 
 const SideNav = () => {
-  const [activeId, setActiveId] = useState<number | null>(null);
+  const [activeId, setActiveId] = useState<string | null>(null);
 
-  const handleLinkClick = (index: number) => {
-    setActiveId(index);
+  const handleLinkClick = (id: string) => {
+    setActiveId(id);
   };
 
   const renderLinks = (links: NavbarLinkProps[]) => {
-    return links.map((link, index) => (
+    return links.map((link) => (
       <section 
-        key={link.label} 
-        onClick={() => handleLinkClick(index)} 
-        className={`flex items-center py-8 space-x-4 ${index === activeId ? 'text-purple-600 border-l-4 border-purple-600 left-0 -ml-8 pl-8' : 'text-white'}`}
+        key={link.id} 
+        onClick={() => handleLinkClick(link.id)} 
+        className={`flex items-center py-8 space-x-4 ${activeId === link.id ? 'text-purple-600 border-l-4 border-purple-600 left-0 -ml-8 pl-8' : 'text-white'}`}
       >
         <Link href={link.href}>
           <Image 
